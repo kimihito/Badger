@@ -1,46 +1,69 @@
 .badger-outter
-	{
-	background:#fff;
-	border:1px solid #ccc;
-	min-width: 36px;
-	height: 36px;
-	border-radius: 18px;
-	-moz-border-radius: 18px;
-	-webkit-border-radius: 18px;
-	box-shadow:0px 1px 5px #ccc;
-	-moz-box-shadow:0px 1px 5px #ccc;
-	-webkit-box-shadow:0px 1px 5px #ccc;
-	float:left;
-	position:absolute;
-	top:-18px;
-	right:-18px;
-	z-index:9999;
-	}
+{
+  background:#fff;
+  border:1px solid #ccc;
+  min-width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  -moz-border-radius: 18px;
+  -webkit-border-radius: 18px;
+  box-shadow:0px 1px 5px #ccc;
+  -moz-box-shadow:0px 1px 5px #ccc;
+  -webkit-box-shadow:0px 1px 5px #ccc;
+  float:left;
+  position:absolute;
+  top:-18px;
+  right:-18px;
+  z-index:9999;
+      }
 .badger-inner
-	{
-	min-width: 30px;
-	height: 30px;
-	border-radius: 15px;
-	-moz-border-radius: 15px;
-	-webkit-border-radius: 15px;
-	background: #f13c31;
-	background: -moz-linear-gradient(100% 100% 90deg, #f13c31, #f79690);
-  	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f79690), to(#f13c31));
-  	background: -webkit-linear-gradient(#f79690, #f13c31);
+  {
+    min-width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    background: #f13c31;
+    background: -moz-linear-gradient(100% 100% 90deg, #f13c31, #f79690);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f79690), to(#f13c31));
+    background: -webkit-linear-gradient(#f79690, #f13c31);
     background: -o-linear-gradient(#f79690, #f13c31);
     margin:3px;
     z-index:99999;
-	}
-.badger-badge
-	{
-	color:#fff;
-	padding:2px 5px;
-	margin:0;
-	text-align:center;
-	text-shadow:0px -1px 1px #e01b0f;
-	z-index:999999;
-	}
-.badger-text
-	{ font-size:18px; }
-.badger-number
-	{ font-size:22px; }
+  }
+  .badger-inner-zero{
+    min-width: 25px;
+    height: 23px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    background: rgb(180,180,180);
+    background: -moz-linear-gradient(100% 100% 90deg, rgb(180,180,180), #E2E2E2);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E2E2E2), to(rgb(180,180,180)));
+    background: -webkit-linear-gradient(#E2E2E2, rgb(180,180,180));
+    background: -o-linear-gradient(#E2E2E2, rgb(180,180,180));
+    margin:3px;
+    z-index:99999;
+  }
+
+  .badger-badge{
+    color:#fff;
+    padding:2px 5px;
+    margin:0;
+    text-align:center;
+    text-shadow:0px -1px 1px #e01b0f;
+    z-index:999999;
+  }
+
+  .badger-badge-zero{
+    color: white;
+    padding: 2px 5px;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0px -1px 1px #E2E2E2;
+  }
+
+  .badger-text
+    { font-size:18px; }
+  .badger-number
+    { font-size:22px; }

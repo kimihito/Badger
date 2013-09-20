@@ -12,11 +12,11 @@
 			badge_id: false
 		};
 		if(settings) jQuery.extend(defaults, settings);
-		var badge_id = (defaults.badge_id) 
+		var badge_id = (defaults.badge_id)
 			// use the badge id specified
-			? defaults.badge_id 
+			? defaults.badge_id
 			// create a random id; jquery does not like ids with periods in them
-			: 'Badger_' + Math.random().toString().replace('.',''); 
+			: 'Badger_' + Math.random().toString().replace('.','');
 		var the_badge = badge_id+'_badge';
 		var badgerExists = this.find('#'+badge_id).html();
 
@@ -50,6 +50,9 @@
 			if(badgerExists)
 				{ this.find('#'+the_badge).html(badge); }
 			else
+                          if(badge == 0)
+				{ this.append('<div class="badger-outter" id="'+badge_id+'"><div class="badger-inner-zero"><p class="badger-badge-zero" id="'+the_badge+'">'+badge+'</p></div></div>'); }
+                            else
 				{ this.append('<div class="badger-outter" id="'+badge_id+'"><div class="badger-inner"><p class="badger-badge" id="'+the_badge+'">'+badge+'</p></div></div>'); }
 
 			// Badger text or number class
